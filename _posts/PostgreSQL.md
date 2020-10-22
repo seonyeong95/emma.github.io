@@ -9,9 +9,7 @@ categories: R
 # db불러오기
 library(DBI)
 library(RPostgreSQL)
-
-con<-dbConnect(dbDriver("PostgreSQL"),dbname = "",host = "",
-               user = "", password = "")
+con<-dbConnect(dbDriver("PostgreSQL"),dbname = "",host = "", user = "", password = "")
 recordSet<-dbSendQuery(con, "select * from bbp_prd_tabown.tbbp10_cc_01_201902")
 data<-dbFetch(recordSet)
 ​```
