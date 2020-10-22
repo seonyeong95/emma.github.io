@@ -1,4 +1,12 @@
-#db불러오기
+---
+title: "PostgreSQL"
+date: 2020-10-22 13:00:00 -0400
+categories: R
+---
+
+
+​```python
+# db불러오기
 library(DBI)
 library(RPostgreSQL)
 
@@ -6,38 +14,10 @@ con<-dbConnect(dbDriver("PostgreSQL"),dbname = "",host = "",
                user = "", password = "")
 recordSet<-dbSendQuery(con, "select * from bbp_prd_tabown.tbbp10_cc_01_201902")
 data<-dbFetch(recordSet)
+​```
 
-data
-summary(data)
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-# library 
-install.packages("dplyr")
-install.packages()
-#데이터 전처리
-attach(data)
-
-# character -> integer
-colnames(data)
-data$nw_zp<-as.integer(nw_zp)
-data$mkt_shot_card_loan_avg_use_amt<-as.integer(mkt_shot_card_loan_avg_use_amt)
-data$mkt_csh_svc_avg_use_amt<-as.integer(mkt_csh_svc_avg_use_amt)
-data$bc_shot_card_loan_avg_use_amt<-as.integer(bc_shot_card_loan_avg_use_amt)
-data$bc_csh_svc_avg_use_amt<-as.integer(bc_csh_svc_avg_use_amt)
-summary(data)
-
-#최빈값
-getmode <- function(v){
-  uniqv <- unique(v)
-  uniqv[which.max(tabulate(match(v,uniqv)))]
-}
-
-result<-getmode(data$mkt_csh_svc_avg_use_amt)
-print(result)
-
-#사본생성
-
-
-# NA
-is.na(mkt_shot_card_loan_avg_use_amt)
-# 201902 연령대별 시장 단기카드대출평균이용금액
-barplot()
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
