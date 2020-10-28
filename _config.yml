@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Record Of Data Analysis"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Seonyeongii"
 description              : "An amazing website."
 url                      : "https://emma.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -93,11 +93,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Seonyeongii"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "**CHOICE** and **FOCUS**"
   location         : "Somewhere"
-  email            :
+  email            : "maytjsdud@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -121,7 +121,7 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
+    - label: "Instagram"
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
